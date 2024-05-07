@@ -43,14 +43,14 @@ public abstract class BasePage {
     public WebElement companyPage;
 
     /*
-    you can call this method and put as an argument  which you want to click
+    you can call this method and put a page as an argument  which you want to access and
      */
     public static WebElement pages(String text){
         return  Driver.getDriver().findElement(By.xpath("//a[@title='"+text+"']"));
     }
 
     /*
-    you can call this method and put as an argument  which you want to click
+    you can call this method and put a module as an argument  which you want to access
      */
 
     public static WebElement modules(String text){
