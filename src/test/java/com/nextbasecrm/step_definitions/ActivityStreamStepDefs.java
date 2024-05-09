@@ -25,41 +25,7 @@ public class ActivityStreamStepDefs extends BasePage {
     public void userLogsInWithValidCredentials() {
         page.login1();
     }
-//    @Then("user should be able to see the following modules")
-//    public void user_should_be_able_to_see_the_following_modules(List<String> expectedModules) {
-//        List<String> actualModules=new ArrayList<>();
-//        for (WebElement each : activeStreamPage.modulesElements) {
-//            actualModules.add(each.getText());
-//
-//        }
-//        //System.out.println(actualModules);
-//        Assert.assertEquals(expectedModules,actualModules);
-//
-//    }
-//
-//
-//    @When("user click on more")
-//    public void userClickOnMore() {
-//    activeStreamPage.more.click();
-//
-//    }
-//
-//    @Then("user should be able to see Four more modules")
-//    public void userShouldBeAbleToSeeFourMoreModules(List<String> expectedMoreModules) {
-//        List<String> actualMoreModules=new ArrayList<>();
-//        for (WebElement each : activeStreamPage.moreModules) {
-//            actualMoreModules.add(each.getText());
-//
-//
-//        }
-//        System.out.println("actualMoreModules = " + actualMoreModules);
-//        Assert.assertEquals(expectedMoreModules,actualMoreModules);
-//    }
-//
 
-//    @When("User on the Activity Stream page")
-//    public void userOnTheActivityStreamPage() {
-//    }
 
     @Then("User should be able to see the following options")
     public void userShouldBeAbleToSeeTheFollowingOptions(List<String> expectedOptions) {
@@ -68,7 +34,7 @@ public class ActivityStreamStepDefs extends BasePage {
             actualOptions.add(each.getText());
 
         }
-        //System.out.println(actualModules);
+
         Assert.assertEquals(expectedOptions,actualOptions);
 
 
@@ -86,7 +52,7 @@ public class ActivityStreamStepDefs extends BasePage {
         for (WebElement each : activeStreamPage.moreModules) {
             actualMoreOptions.add(each.getText());
         }
-        //System.out.println("actualMoreModules = " + actualMoreModules);
+
         Assert.assertEquals(expectedMoreOptions,actualMoreOptions);
 
     }
