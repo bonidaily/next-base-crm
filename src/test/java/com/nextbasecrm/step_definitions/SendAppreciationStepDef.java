@@ -22,12 +22,14 @@ public class SendAppreciationStepDef extends BasePage {
     LoginPage loginPage = new LoginPage();
     WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
 
-    @Given("user is logged in with valid credentials")
+   /* @Given("user is logged in with valid credentials")
     public void userIsLoggedInWithValidCredentials() {
 
         loginPage.login1();
 
     }
+
+    */
 
     @When("user clicks the module More")
     public void user_clicks_the_module_more() {
