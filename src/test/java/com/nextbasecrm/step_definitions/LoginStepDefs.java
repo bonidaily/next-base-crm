@@ -14,7 +14,7 @@ public class LoginStepDefs extends BasePage {
 
     @Given("the user is on the login page")
     public void the_user_is_on_the_login_page() {
-        System.out.println("Login to app in Before method");
+        loginPage.login1();
     }
 
     @Given("the user logged in as {string}")
@@ -50,6 +50,7 @@ public class LoginStepDefs extends BasePage {
         loginPage.login1();
 
     }
+
 
 
 }
