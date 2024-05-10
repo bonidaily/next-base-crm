@@ -50,7 +50,5 @@ public class LoginStepDefs extends BasePage {
         loginPage.login1();
 
     }
-
-
 }
 
