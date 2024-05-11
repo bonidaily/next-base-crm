@@ -42,4 +42,7 @@ public class MessagePage {
     @FindBy(xpath = "//span[.='Send message …']")
     public WebElement sendMessageDisplayed;
 
+    @FindBy(xpath = "//span[.='Send message …']")
+    public WebElement sentMessageDisplayed;
+
 }
