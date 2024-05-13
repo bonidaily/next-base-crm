@@ -45,6 +45,5 @@ public class LoginStepDefs {
     public void userIsLoggedInWithValidCredentials() {
 
         loginPage.login1();
-
     }
 }

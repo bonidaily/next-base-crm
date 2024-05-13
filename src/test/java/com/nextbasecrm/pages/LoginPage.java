@@ -17,7 +17,6 @@ public class LoginPage {
     public WebElement userName;
 
 
-
     @FindBy(name="USER_PASSWORD")
     public WebElement password;
 
@@ -37,5 +36,4 @@ public class LoginPage {
         password.sendKeys("UserUser");
         submit.click();
     }
-
 }
