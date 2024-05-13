@@ -8,9 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public abstract class BasePage {
-
     public BasePage() {
-
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
@@ -58,5 +56,7 @@ public abstract class BasePage {
     public static WebElement modules(String text){
         return  Driver.getDriver().findElement(By.xpath("//span[.='"+text+ "']"));
     }
-}
 
+
+
+}
