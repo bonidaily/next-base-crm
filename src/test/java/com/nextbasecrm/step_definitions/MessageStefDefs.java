@@ -39,7 +39,7 @@ public class MessageStefDefs {
     @Then("user should see The message title is not specified")
     public void user_should_see_the_message_title_is_not_specified() {
 
-        String expectedErrorMessage = "The message title is not specified.";
+        String expectedErrorMessage = "The message title is not specified";
         String actualErrorMessage = messagePage.errorMessage1.getText();
         Assert.assertEquals(actualErrorMessage, expectedErrorMessage);
 
