@@ -48,7 +48,6 @@ public class LoginStepDefs extends BasePage {
     public void userIsLoggedInWithValidCredentials() {
 
         loginPage.login1();
-
     }
 
 
