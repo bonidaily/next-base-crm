@@ -29,4 +29,14 @@ public class LoginPage {
         password.sendKeys("UserUser");
         submit.click();
     }
+
+    public void login(String userType) {
+
+        String username = ConfigurationReader.getProperty(userType + "1_username");
+        String Password = ConfigurationReader.getProperty(userType + "1_password");
+        userName.sendKeys(username);
+        password.sendKeys(Password);
+        submit.click();
+
+    }
 }
