@@ -14,7 +14,7 @@ public class LoginStepDefs extends BasePage {
 
     @Given("the user is on the login page")
     public void the_user_is_on_the_login_page() {
-        System.out.println("Login to app in Before method");
+        loginPage.login1();
     }
 
     @Given("the user logged in as {string}")
@@ -34,13 +34,13 @@ public class LoginStepDefs extends BasePage {
             password = ConfigurationReader.getProperty("marketing1_password");
         }
         //send username and password and login
-        new LoginPage().login(username, password);
+        new LoginPage().login1();
     }
 
     @Given("the user logged in with username as {string} and password as {string}")
     public void the_user_logged_in_with_username_as_and_password_as(String username, String password) {
         LoginPage loginPage = new LoginPage();
-        loginPage.login(username, password);
+        loginPage.login1( );
     }
 
 
@@ -48,8 +48,8 @@ public class LoginStepDefs extends BasePage {
     public void userIsLoggedInWithValidCredentials() {
 
         loginPage.login1();
-
     }
+
 
 
 }
